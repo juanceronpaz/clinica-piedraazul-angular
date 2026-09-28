@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#124f5d"/><stop offset="1" stop-color="#2998a5"/></linearGradient></defs>
+<rect width="1600" height="600" fill="url(#g)"/><circle cx="1360" cy="120" r="180" fill="#fff" opacity=".08"/><circle cx="1460" cy="510" r="245" fill="#fff" opacity=".06"/>
+<g fill="#fff"><text x="100" y="170" font-family="Arial,sans-serif" font-size="34" font-weight="700" opacity=".85">PIEDRAAZUL · TIENDA</text><text x="100" y="265" font-family="Arial,sans-serif" font-size="64" font-weight="800">Complementa tu</text><text x="100" y="330" font-family="Arial,sans-serif" font-size="64" font-weight="800">bienestar</text><text x="100" y="395" font-family="Arial,sans-serif" font-size="28" opacity=".9">Conoce productos de cuidado personal, nutrición y bienestar.</text></g>
+<g transform="translate(1290 305)"><circle r="100" fill="#fff" opacity=".95"/><path d="M-58-35h116l-13 105H-45z" fill="#176b7a"/><path d="M-28-35c0-42 56-42 56 0" fill="none" stroke="#2998a5" stroke-width="14" stroke-linecap="round"/><circle cx="0" cy="15" r="18" fill="#fff" opacity=".9"/></g>
+</svg>

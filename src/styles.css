@@ -1,0 +1,380 @@
+:root { --azul-piedra: #176b7a; --azul-oscuro: #124f5d; --verde-azul: #2998a5; --borde: #d5e9e8; }
+
+html { scroll-behavior: smooth; }
+.header-principal { background: #fff; border-bottom: 1px solid var(--borde); }
+.logo-icono, .footer-logo { width: 48px; height: 48px; display: inline-flex; align-items: center; justify-content: center; border-radius: 12px; background: var(--azul-piedra); color: #fff; font-size: 24px; box-shadow: 0 8px 18px rgba(23,107,122,.15); }
+.header-principal h1 { color: var(--azul-oscuro); letter-spacing: -.02em; }
+.dato-header { display: flex; align-items: center; gap: 8px; color: #637b80; font-size: 14px; }
+.dato-header i { color: var(--azul-piedra); }
+.redes-header, .footer-redes { display: flex; gap: 8px; }
+.redes-header a, .footer-redes a { width: 34px; height: 34px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; transition: .2s ease; }
+.redes-header a { color: var(--azul-piedra); background: #eef7f7; }
+.redes-header a:hover { transform: translateY(-2px); background: var(--azul-piedra); color: #fff; }
+.navbar.bg-primary { background-color: var(--azul-piedra) !important; box-shadow: 0 4px 14px rgba(18,79,93,.16); }
+.navbar .nav-link { border-radius: 8px; margin: 0 2px; transition: background-color .2s ease; }
+.navbar .nav-link:hover, .navbar .nav-link.active { background: rgba(255,255,255,.12); }
+.hero-clinica { background: linear-gradient(180deg, #fff 0%, #f7fbfb 100%); }
+.hero-titulo { color: var(--azul-oscuro); letter-spacing: -.03em; line-height: 1.08; }
+.hero-texto { max-width: 620px; }
+.badge-clinica { color: var(--azul-piedra); background: #eef7f7; border: 1px solid var(--borde); padding: .6rem .8rem; border-radius: 999px; }
+.hero-imagen-wrap { position: relative; }
+.imagen-hero { max-height: 390px; object-fit: cover; }
+.hero-imagen-wrap::after { content: ''; position: absolute; inset: 14px -10px -10px 14px; border: 1px solid var(--borde); border-radius: 1.5rem; z-index: -1; }
+.hero-sello { position: absolute; left: 20px; bottom: 20px; display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,.95); padding: 10px 14px; border-radius: 12px; box-shadow: 0 .5rem 1.2rem rgba(0,0,0,.12); color: var(--azul-oscuro); }
+.hero-sello i { font-size: 24px; color: var(--azul-piedra); }
+.hero-sello strong, .hero-sello small { display: block; }
+.hero-sello small { color: #637b80; }
+.mini-estadistica { border: 1px solid var(--borde); border-radius: 12px; background: #fff; padding: 10px; text-align: center; height: 100%; }
+.mini-estadistica strong { display: block; color: var(--azul-piedra); font-size: 1.25rem; }
+.mini-estadistica span { color: #637b80; font-size: .78rem; }
+.section-heading h2 { color: var(--azul-oscuro); letter-spacing: -.02em; }
+.section-kicker { display: inline-block; color: var(--azul-piedra); font-size: .72rem; font-weight: 800; letter-spacing: .14em; margin-bottom: 5px; }
+.carousel-piedraazul { max-width: 1100px; margin: 0 auto; border-radius: 1rem; }
+.carousel-piedraazul img { width: 100%; height: auto; object-fit: contain; }
+.carousel-caption { left: 7%; bottom: 12%; z-index: 10; pointer-events: none; }
+.carousel-caption .btn { position: relative; z-index: 11; pointer-events: auto; }
+.carousel-control-prev, .carousel-control-next { width: 8%; }
+.especialidades-panel, .categorias-panel { border-color: var(--borde) !important; box-shadow: 0 .25rem .9rem rgba(0,0,0,.04); }
+.panel-icon { width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; flex: 0 0 38px; border-radius: 10px; background: #eef7f7; color: var(--azul-piedra); }
+.panel-icon-light { background: rgba(255,255,255,.7); }
+.especialidad-btn, .categoria-btn { text-align: left; border-radius: 9px; }
+.especialidad-info { background: #eef7f7; border: 1px solid var(--borde); color: #415d62; }
+.especialidad-info h3 { color: var(--azul-oscuro); }
+.especialidad-info .small { color: var(--azul-piedra); }
+.doctor-card, .producto-card { height: 100%; border: 1px solid var(--borde); border-radius: 14px; background: #fff; overflow: hidden; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.doctor-card:hover, .producto-card:hover { transform: translateY(-4px); box-shadow: 0 .65rem 1.3rem rgba(18,79,93,.11); border-color: #b9d8d7; }
+.doctor-imagen-wrap { position: relative; padding: 10px 10px 0; }
+.doctor-imagen { width: 100%; height: 230px; object-fit: contain; border-radius: 10px; background-color: #f8f9fa; padding: 4px; }
+.doctor-disponible { position: absolute; left: 18px; top: 18px; background: rgba(255,255,255,.95); color: #24714f; border: 1px solid #cfe8da; border-radius: 999px; padding: 4px 8px; font-size: .7rem; font-weight: 700; }
+.doctor-contenido { display: flex; flex-direction: column; height: calc(100% - 240px); padding: 14px; }
+.doctor-card h3 { color: var(--azul-oscuro); font-size: 1.03rem; margin-bottom: 5px; }
+.doctor-especialidad { color: var(--azul-piedra); font-weight: 700; font-size: .9rem; }
+.doctor-subespecialidad { color: #637b80; font-size: .84rem; margin-bottom: 8px; }
+.doctor-frase { font-size: .86rem; color: #52696e; flex-grow: 1; margin-bottom: 12px; }
+.btn-agendar { border-radius: 9px; }
+.registro-card { border-radius: 18px; }
+.registro-exitoso { padding: 25px 0 10px; }
+.success-icon { width: 76px; height: 76px; margin: 0 auto; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #e9f7ef; color: #21834d; font-size: 2.4rem; }
+.form-control { border-color: #cbdedf; }
+.form-control:focus { border-color: var(--azul-piedra); box-shadow: 0 0 0 .2rem rgba(23,107,122,.12); }
+.producto-card { padding: 18px; }
+.producto-icono { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #eef7f7; color: var(--azul-piedra); font-size: 25px; margin-bottom: 14px; }
+.producto-card h3 { color: var(--azul-oscuro); font-size: 1.02rem; }
+.producto-precio { color: var(--azul-piedra); font-weight: 800; margin-top: 10px; }
+.producto-tag { display: inline-block; margin-top: 8px; color: #637b80; font-size: .72rem; background: #f4f8f8; border-radius: 999px; padding: 4px 8px; }
+.footer-clinica { background: #0e3e48; }
+.footer-marca { display: flex; align-items: center; gap: 12px; }
+.footer-logo { width: 42px; height: 42px; font-size: 20px; background: rgba(255,255,255,.12); box-shadow: none; }
+.footer-texto { color: #c5d9dc; max-width: 420px; }
+.footer-clinica a { color: #fff; text-decoration: none; }
+.footer-clinica a:hover { color: #d9f2f2; }
+.footer-redes a { color: #fff; background: rgba(255,255,255,.12); }
+.footer-redes a:hover { background: rgba(255,255,255,.22); transform: translateY(-2px); }
+.footer-copy { color: #b5cdd0; }
+.btn-arriba { position: fixed; right: 20px; bottom: 20px; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 1030; box-shadow: 0 .4rem 1rem rgba(0,0,0,.18); }
+@media (max-width: 767.98px) {
+  .hero-sello { left: 14px; bottom: 14px; }
+  .navbar .nav-item.ms-md-2 { margin-left: 0 !important; }
+}
+@media (max-width: 575.98px) {
+  .dato-header { width: 100%; }
+  .hero-sello { position: static; margin-top: 10px; width: fit-content; }
+  .hero-imagen-wrap::after { display: none; }
+  .hero-titulo { font-size: 2.35rem; }
+  .doctor-imagen { height: 220px; }
+}
+
+/* ===== Identidad visual compartida ===== */
+.btn-clinica,
+.btn-clinica-outline,
+.btn-clinica-light,
+.btn-panel,
+.btn-agendar {
+  border-radius: 10px;
+  font-weight: 700;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, border-color .2s ease;
+}
+
+.btn-clinica {
+  background: var(--azul-piedra);
+  border-color: var(--azul-piedra);
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(23,107,122,.16);
+}
+
+.btn-clinica:hover,
+.btn-clinica:focus {
+  background: var(--azul-oscuro);
+  border-color: var(--azul-oscuro);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 9px 18px rgba(18,79,93,.22);
+}
+
+.btn-clinica-outline {
+  color: var(--azul-piedra);
+  background: #fff;
+  border: 1px solid var(--azul-piedra);
+}
+
+.btn-clinica-outline:hover,
+.btn-clinica-outline:focus {
+  color: #fff;
+  background: var(--azul-piedra);
+  border-color: var(--azul-piedra);
+  transform: translateY(-2px);
+}
+
+.btn-clinica-light {
+  background: #fff;
+  border: 1px solid rgba(255,255,255,.7);
+  color: var(--azul-piedra);
+}
+
+.btn-clinica-light:hover,
+.btn-clinica-light:focus {
+  background: #eef7f7;
+  border-color: #fff;
+  color: var(--azul-oscuro);
+  transform: translateY(-1px);
+}
+
+.btn-panel {
+  min-height: 43px;
+  border-width: 1px;
+  text-align: left;
+  padding: .55rem .75rem;
+}
+
+.especialidad-btn.btn-primary,
+.categoria-btn.btn-primary {
+  background: var(--azul-piedra);
+  border-color: var(--azul-piedra);
+  box-shadow: 0 5px 12px rgba(23,107,122,.13);
+}
+
+.especialidad-btn.btn-outline-primary,
+.categoria-btn.btn-outline-primary {
+  color: var(--azul-piedra);
+  border-color: var(--borde);
+  background: #fbfefe;
+}
+
+.especialidad-btn.btn-outline-primary:hover,
+.categoria-btn.btn-outline-primary:hover {
+  color: var(--azul-oscuro);
+  background: #eef7f7;
+  border-color: #b9d8d7;
+}
+
+.navbar .navbar-brand {
+  letter-spacing: -.01em;
+}
+
+.navbar-toggler {
+  border-radius: 10px;
+  border-color: rgba(255,255,255,.45);
+}
+
+.carousel-piedraazul {
+  border: 1px solid var(--borde);
+  overflow: hidden;
+}
+
+.carousel-piedraazul .carousel-item {
+  background: var(--azul-oscuro);
+}
+
+.carousel-piedraazul .carousel-item img {
+  min-height: 250px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,.35));
+}
+
+.carousel-piedraazul .carousel-indicators [data-bs-target] {
+  width: 28px;
+  height: 5px;
+  border-radius: 999px;
+}
+
+/* Paneles laterales con la misma identidad de la clínica */
+.especialidades-panel,
+.categorias-panel {
+  position: sticky;
+  top: 90px;
+  overflow: hidden;
+  border-radius: 16px !important;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fcfc 100%);
+}
+
+.especialidades-panel::before,
+.categorias-panel::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background: linear-gradient(90deg, var(--azul-piedra), var(--verde-azul));
+}
+
+.especialidades-panel .card-body,
+.categorias-panel .card-body {
+  background: transparent;
+}
+
+.especialidad-btn,
+.categoria-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.especialidad-info {
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(18,79,93,.06);
+}
+
+/* Fotografías normalizadas: se conserva la imagen completa dentro de un marco uniforme */
+.doctor-imagen-wrap {
+  padding: 12px 12px 0;
+  background: linear-gradient(180deg, #f6fbfb 0%, #ffffff 100%);
+}
+
+.doctor-imagen {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  border: 0 !important;
+  border-radius: 12px;
+  padding: 0;
+  background: #f2f8f8;
+}
+
+.doctor-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(18,79,93,.045);
+}
+
+.doctor-card:hover .doctor-imagen {
+  transform: scale(1.015);
+}
+
+.doctor-imagen {
+  transition: transform .25s ease;
+}
+
+.doctor-disponible {
+  left: 20px;
+  top: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.doctor-contenido {
+  padding: 16px;
+}
+
+.btn-agendar {
+  margin-top: auto;
+}
+
+.producto-card {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fff 0%, #fbfefe 100%);
+}
+
+.producto-icono {
+  border: 1px solid var(--borde);
+}
+
+.registro-card {
+  border-top: 5px solid var(--azul-piedra) !important;
+}
+
+.form-control,
+.form-check-input {
+  accent-color: var(--azul-piedra);
+}
+
+.form-control:focus {
+  border-color: var(--azul-piedra);
+}
+
+.form-check-input:checked {
+  background-color: var(--azul-piedra);
+  border-color: var(--azul-piedra);
+}
+
+.footer-clinica {
+  border-top: 5px solid var(--verde-azul);
+}
+
+.btn-arriba {
+  border: 0;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .especialidad-btn,
+  .categoria-btn {
+    font-size: .72rem;
+    line-height: 1.15;
+    padding: .55rem .5rem;
+  }
+
+  .especialidad-btn .bi,
+  .categoria-btn .bi {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .especialidades-panel,
+  .categorias-panel {
+    position: static;
+  }
+
+  .carousel-caption {
+    left: 5%;
+    bottom: 8%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .doctor-imagen {
+    height: 260px;
+  }
+
+  .carousel-piedraazul .carousel-item img {
+    min-height: 190px;
+  }
+
+  .carousel-caption .btn {
+    font-size: .82rem;
+    padding: .5rem .75rem;
+  }
+}
+
+
+/* Bootstrap buttons keep their rubric classes while adopting the clinic identity. */
+.registro-card .btn-primary,
+.doctor-card .btn-primary {
+  background: var(--azul-piedra);
+  border-color: var(--azul-piedra);
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: 0 6px 14px rgba(23,107,122,.16);
+}
+
+.registro-card .btn-primary:hover,
+.registro-card .btn-primary:focus,
+.doctor-card .btn-primary:hover,
+.doctor-card .btn-primary:focus {
+  background: var(--azul-oscuro);
+  border-color: var(--azul-oscuro);
+  color: #fff;
+  transform: translateY(-2px);
+}
